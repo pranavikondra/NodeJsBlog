@@ -2,9 +2,11 @@ const path = require('path')
 
 const { config, engine } = require('express-edge');
 const express = require('express')
+const mongoose = require('mongoose')
+
+
 const app = new express()
-
-
+mongoose.connect("mongodb://localhost:27017/dbname", { useNewUrlParser: true, useUnifiedTopology: true });
 app.use(express.static('public'))
 
 app.use(engine); // instead of app.use(expressEdge);
