@@ -4,14 +4,14 @@ const Post = require('./database/models/post')
 
 
 mongoose.connect('mongodb://localhost:27017/dbname', { useNewUrlParser: true, useUnifiedTopology: true });
-Post.find({}, (error, post) => {
+// Post.find({}, (error, post) => {
 
-    console.log(error, post)
-})
+//     console.log(error, post)
+// })
 // Post.findById("6090f9fe2167490628893094", (error, posts) => {
 //     console.log(error, post)
 // })
-// Post.findByIdAndDelete("6090fb7988c3f2148402bb7f", (error, post) => {
+// Post.findByIdAndDelete("60a2656c01221b1d28725122", (error, post) => {
 //     console.log(error, post)
 // })
 // Post.create({
